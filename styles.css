@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("/background.png");
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-color: black;
+    color:white;
+    background-attachment: fixed;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@font-face {
+    font-family: 'Posterama';
+    src: 
+        url('/Posterama.ttf') format('truetype');
+        font-weight: 600;
+        font-display: swap;
+        font-style: normal;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+@media screen {
+    
+}
+
+.row-1{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    font-family: "Posterama", sans-serif;
+    font-size:66px;
+}
+
+p{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.contact{
+    font-family: "Posterama", sans-serif;
+    font-size:22px;
+    margin-right:150px;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+.contact:hover{
+    transform: scale(1.2);
+    transition: all;
+    transition-duration: 200ms;
+}
+
+ul li{
+    list-style-type: none;
+    font-family: "Posterama", sans-serif;
+    font-size: 24px;
+    line-height: 50px;
+    margin-left: 50px;
+}
+
+.list{
+    margin-top: 80px;
+}
+
+.ComingSoon{
+    font-family: "Posterama", sans-serif;
+    font-size:36px;
+    margin-top:90px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
