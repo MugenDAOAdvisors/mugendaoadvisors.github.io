@@ -9,11 +9,6 @@ body{
     background-attachment: fixed;
 
 }
-*{
-    margin: 0;
-    padding: 0;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 @font-face {
@@ -29,37 +24,45 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-left: 70px;
     margin-right: 70px;
+    position: relative;
 }
 
-@media screen {
-    
+.BigBlossom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: max-content;
 }
 
-.row-1{
-    display: flex;
-    justify-content: space-between;
+.SmallBlossom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: max-content;
 }
 
 h1{
     font-family: "Posterama", sans-serif;
-    font-size:66px;
+    font-size: calc(30px + (66 - 30) * ((100vw - 300px) / (1600 - 300)));
+    margin:0
 }
 
 p{
     font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 16px;
+    margin:0
 }
 
-.contact{
+a.contact{
     font-family: "Posterama", sans-serif;
-    font-size:22px;
-    margin-right:150px;
     transition: all;
+    font-size:22px;
     transition-duration: 200ms;
+    display: inline-flex;
 }
 
 .contact:hover{
@@ -89,4 +92,19 @@ ul li{
 a{
     color: white;
     text-decoration: none;
+}
+
+
+@media screen and (min-width:1600px){
+    h1{
+        font-size: 66px;
+    }
+    .row-1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact{
+        margin: 0px;
+        margin-right:150px;
+    }
 }
