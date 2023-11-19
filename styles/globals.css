@@ -1,27 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+@font-face {
+  font-family: 'Posterama';
+  src: 
+      url('/fonts/Posterama.ttf') format('truetype');
+      font-weight: 600;
+      font-display: swap;
+      font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+body{
+  background-color: #1B1B1B;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+p{
+  font-family: "DM Sans", sans-serif;
+  font-size:24px;
+  color: #D0D0D0;
+}
+
+h1{
+  font-family:"Posterama", sans-serif;
+  font-size:76px;
+  text-transform: uppercase;
+  color:white;
+}
+
+h2{
+  font-family:"Posterama", sans-serif;
+  font-size:55px;
+  text-transform: uppercase;
+  color:white;
+}
+
+h3{
+  font-family: "DM Sans", sans-serif;
+  font-size:40px;
+  color: white;
+  font-weight: bold;
+}
+
+.underlinedGradientText{
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 15px;
+  background: linear-gradient(180deg, rgba(103, 49, 71) 0%, rgba(255, 255, 255) 200%);
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  
+}
+
+.underlinedGradientText::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  height: 5px;
+  background: linear-gradient(180deg, rgba(255, 255, 255) -400%, rgba(103, 49, 71) 300%);
+
+  
 }
