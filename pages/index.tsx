@@ -10,9 +10,7 @@ import Footer from "@/components/Footer";
 export default function Index() {
   return (
    <div>
-    <div className="px-[130px]">
       <Navbar></Navbar>
-    </div>
     <section className="pl-[130px]">
       <Home></Home>
     </section>
@@ -32,6 +30,6 @@ export default function Index() {
       <Optimize></Optimize>
     </section>
     <Footer></Footer>
-   </div>
+  </div>
   )
 }

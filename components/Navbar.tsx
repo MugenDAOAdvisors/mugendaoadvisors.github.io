@@ -17,12 +17,12 @@ export default function Navbar(){
         },
         {
             name: "Contact",
-            href:"/"
+            href:"/contact"
         },
 ]
 
     return(
-        <nav className="flex justify-between py-[30px]">
+        <nav className="flex justify-between py-[30px] mx-[130px]">
             <div className="flex items-center">
                 <img src="/mugenLogo.png"></img>
                 <p className="uppercase font-[DM Sans] text-[20px] font-bold">Mugen</p>

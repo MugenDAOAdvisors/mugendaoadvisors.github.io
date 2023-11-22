@@ -17,7 +17,7 @@
 
 
 body{
-  background-color: #1B1B1B;
+  background-color: #1B1B1B!important;
 }
 
 p{
@@ -68,4 +68,27 @@ h3{
   background: linear-gradient(180deg, rgba(255, 255, 255) -400%, rgba(103, 49, 71) 300%);
 
   
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+
+label{
+  font-size: 20px!important;
+}
+
+.chakra-input,.chakra-textarea,.chakra-select{
+    font-family: "DM Sans", sans-serif;
+    color: #8D8D8D!important;
+}
+.chakra-input::placeholder,.chakra-textarea::placeholder,.chakra-select::placeholder{
+  font-family: "DM Sans", sans-serif;
+  color: #8D8D8D!important;
+}
+
+.chakra-button{
+
+  color:white!important;
 }
