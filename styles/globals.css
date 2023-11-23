@@ -28,7 +28,7 @@ p{
 
 h1{
   font-family:"Posterama", sans-serif;
-  font-size:76px;
+  font-size:40px;
   text-transform: uppercase;
   color:white;
 }
@@ -92,3 +92,24 @@ label{
 
   color:white!important;
 }
+
+
+
+@media (min-width: 768px){
+  h1{
+    font-size:60px;
+  }
+}
+
+@media (min-width: 1024px){
+  h1{
+    font-size:60px;
+  }
+}
+
+@media (min-width: 1536px){
+  h1{
+    font-size:76px;
+  }
+}
+

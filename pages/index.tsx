@@ -10,26 +10,26 @@ import Footer from "@/components/Footer";
 export default function Index() {
   return (
    <div>
-      <Navbar></Navbar>
-    <section className="pl-[130px]">
+      {/* <Navbar></Navbar> */}
+    <section className=" px-[20px] lg:pr-0 lg:pl-[130px] mt-[130px]">
       <Home></Home>
     </section>
-    <section className="px-[130px]">
+{/*     <section className="px-[130px] mt-[260px]">
       <About></About>
     </section>
-    <section className="px-[130px]">
+    <section className="px-[130px] mt-[175px]">
       <Services></Services>
     </section>
-    <section className="px-[130px]">
+    <section className="px-[130px] mt-[150px]">
       <WhyMugen></WhyMugen>
     </section>
-    <section>
+    <section className="mt-[200px]">
       <Partners></Partners>
     </section>
-    <section className="px-[130px]">
+    <section className="px-[130px] mt-[200px]">
       <Optimize></Optimize>
     </section>
-    <Footer></Footer>
+    <Footer></Footer> */}
   </div>
   )
 }
