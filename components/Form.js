@@ -55,14 +55,13 @@ const handleChange = ({ target }) =>
 
 return (
     <ChakraProvider>
-    <div>
+    <div className="flex flex-col lg:space-y-[50px] space-y-[20px] ">
 
-    <div>
     {error && (
         <Text color="red.300">{error}</Text>
     )}
-        <div className="flex gap-10">
-        <FormControl className="w-1/2" isRequired isInvalid={touched.name && !values.name}>
+        <div className="flex flex-col lg:flex-row lg:gap-[20px] space-y-[20px] lg:space-y-0">
+        <FormControl className="lg:w-1/2" isRequired isInvalid={touched.name && !values.name}>
             <FormLabel className="text-white">Name</FormLabel>
             <Input
             className="w-full bg-transparent"
@@ -76,7 +75,7 @@ return (
             />
             <FormErrorMessage>Required</FormErrorMessage>
         </FormControl>
-        <FormControl className="w-1/2" isRequired isInvalid={touched.email && !values.email}>
+        <FormControl className="lg:w-1/2" isRequired isInvalid={touched.email && !values.email}>
             <FormLabel className="text-white">Email</FormLabel>
             <Input
             className="w-full"
@@ -119,7 +118,7 @@ return (
         />
         <FormErrorMessage>Required</FormErrorMessage>
         </FormControl>
-
+        <div className="flex">
         <Button
             variant="outline"
             isLoading={isLoading}
@@ -127,7 +126,7 @@ return (
             onClick={onSubmit}>
             Submit
         </Button>
-    </div>
+        </div>
     </div>
     </ChakraProvider>
 );

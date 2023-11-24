@@ -42,7 +42,7 @@ h2{
 
 h3{
   font-family: "DM Sans", sans-serif;
-  font-size:40px;
+  font-size:24px;
   color: white;
   font-weight: bold;
 }
@@ -54,6 +54,9 @@ h3{
   }
   h2{
     font-size: 40px;
+  }
+  h3{
+    font-size:40px;
   }
   p{
     font-size: 20px;
