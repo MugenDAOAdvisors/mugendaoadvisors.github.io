@@ -22,7 +22,7 @@ body{
 
 p{
   font-family: "DM Sans", sans-serif;
-  font-size:24px;
+  font-size:16px;
   color: #D0D0D0;
 }
 
@@ -35,7 +35,7 @@ h1{
 
 h2{
   font-family:"Posterama", sans-serif;
-  font-size:55px;
+  font-size:35px;
   text-transform: uppercase;
   color:white;
 }
@@ -46,6 +46,38 @@ h3{
   color: white;
   font-weight: bold;
 }
+
+
+@media (min-width: 768px){
+  h1{
+    font-size:60px;
+  }
+  h2{
+    font-size: 40px;
+  }
+  p{
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px){
+  h1{
+    font-size:60px;
+  }
+  h2{
+    font-size: 55px;
+  }
+  p{
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1536px){
+  h1{
+    font-size:76px;
+  }
+}
+
 
 .underlinedGradientText{
   text-decoration: underline;
@@ -94,22 +126,4 @@ label{
 }
 
 
-
-@media (min-width: 768px){
-  h1{
-    font-size:60px;
-  }
-}
-
-@media (min-width: 1024px){
-  h1{
-    font-size:60px;
-  }
-}
-
-@media (min-width: 1536px){
-  h1{
-    font-size:76px;
-  }
-}
 
