@@ -43,6 +43,12 @@ const handleChange = ({ target }) =>
             await sendContactForm(values);
             setTouched({});
             setState(initState);
+            toast({
+                title:"Message Sent.",
+                status:"success",
+                duration:2000,
+                position:"top",
+            })
         } catch (error) {
             setState((prev) => ({
                 ...prev,
