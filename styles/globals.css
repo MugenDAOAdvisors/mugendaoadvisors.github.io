@@ -128,7 +128,7 @@ label{
   color:white!important;
 }
 
-.topRightPetal{
+/* .topRightPetal{
   animation: topRightPetalAnimation 5s infinite linear;
 }
 
@@ -164,7 +164,7 @@ label{
     opacity: 0;
     transform: translate(-600%, 100%) rotate(240deg);
   }
-}
+} */
 
 
 
