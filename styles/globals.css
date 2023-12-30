@@ -128,5 +128,44 @@ label{
   color:white!important;
 }
 
+.topRightPetal{
+  animation: topRightPetalAnimation 5s infinite linear;
+}
+
+@keyframes topRightPetalAnimation{
+  0%{
+    opacity: 0;
+    
+  }
+  50%{
+    opacity: 1;
+    transform: translate(-500%, -300%) rotate(180deg);
+  }
+  100%{
+    opacity: 0;
+    transform: translate(-800%, -600%) rotate(460deg);
+  }
+}
+
+.topPetal{
+  animation: RightPetalAnimation 5s infinite linear;
+}
+
+@keyframes RightPetalAnimation{
+  0%{
+    opacity: 0;
+    
+  }
+  50%{
+    opacity: 1;
+    transform: translate(-300%, 0%) rotate(180deg);
+  }
+  100%{
+    opacity: 0;
+    transform: translate(-600%, 100%) rotate(240deg);
+  }
+}
+
+
 
 
