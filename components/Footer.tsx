@@ -2,7 +2,7 @@ export default function Footer(){
     return(
         <div className="bg-black py-[75px] 2xl:px-[130px] xl:px-[50px] px-[20px] flex flex-col gap-[50px]">
             <div>
-                <p className="uppercase font-[DM Sans] text-[16px] sm:text-[18px] font-bold">Mugen DAO</p>
+                <p className="uppercase font-[DM Sans] text-[16px] sm:text-[18px] font-bold">Mugen DAO Advisors</p>
             </div>
             <div className="flex flex-col xl:flex-row justify-between gap-[50px] md:gap-[100px]">
                 <div className="flex flex-col md:flex-row xl:w-1/2 gap-[50px] md:gap-[100px]">

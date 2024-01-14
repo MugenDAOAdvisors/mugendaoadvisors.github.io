@@ -7,28 +7,29 @@ const capabilities = [
 {
     title: "Community Support",
     topics: [
-    "Lorem ipsum dolor sit amet 1",
-    "Lorem ipsum dolor sit amet 2",
-    "Lorem ipsum dolor sit amet 3",
-    "Lorem ipsum dolor sit amet 4",
+    "Operations Management",
+    "Governance and Voting Services",
+    "Treasury Management",
+    "Proposal Management Services",
+    "Ecosystem Grants Program Management",
+    "Community Outreach and Social Media Account Administration",
     ],
 },
 {
     title: "DAO governance",
     topics: [
-    "Lorem ipsum dolor sit amet 1",
-    "Lorem ipsum dolor sit amet 2",
-    "Lorem ipsum dolor sit amet 3",
-    "Lorem ipsum dolor sit amet 4",
+    "Strategy, Growth and Scalability Advisory Services",
+    "Strategy, Growth and Scalability Advisory Services",
+    "Compliance and Risk Advisory Services",
     ],
 },
 {
     title: "Strategic Advisory",
     topics: [
-    "Lorem ipsum dolor sit amet 1",
-    "Lorem ipsum dolor sit amet 2",
-    "Lorem ipsum dolor sit amet 3",
-    "Lorem ipsum dolor sit amet 4",
+    "Lorem ipsum dolor sit amet ",
+    "Lorem ipsum dolor sit amet ",
+    "Lorem ipsum dolor sit amet ",
+    "Lorem ipsum dolor sit amet ",
     ],
 },
 ];
@@ -74,24 +75,23 @@ return (
     <Navbar></Navbar>
     </section>
     <section className="2xl:mx-[130px] lg:mx-[50px] mx-[20px] pb-[300px] border-b-[1px]  border-[#D9D9D9] mt-[150px]">
-    <div className="flex flex-col space-y-[80px] items-center">
+    <div className="flex flex-col space-y-[50px] items-center">
         <h1 className="text-center">
-        TAKE AIM AT SUCCESS WITH OUR PRECISION{" "}
+        Builders should{" "}
         <span className="bg-clip-text text-transparent bg-gradient-to-b from-[#673147] from-[-30%] to-[#FFFFFF] to-[400%]">
-            DAO SOLUTIONS
+        focus on building.
         </span>
+        <br></br>We'll take care of the rest.
         </h1>
-        <p className="text-center w-1/2">
-        Our expertise in crafting unique and innovative designs allows us to
-        deliver comprehensive end-to-end projects that build lasting
-        connections.
+        <p className="text-center w-3/4 2xl:w-1/2">
+        Our best-in-class suite of DAO management services are designed to let core teams focus on building decentralized protocols while we take care of the necessary administrative tasks communities require.
         </p>
     </div>
     </section>
     <section ref={ref} className="2xl:px-[130px] lg:px-[50px] px-[20px] pt-[70px] mb-[150px] relative">
     <div className="flex flex-col lg:flex-row lg:space-x-[120px] ">
         <div className="lg:w-1/3">
-        <h2 ref={titleRef} className={`absolute text-[40px] top-[70px]`} style={{ top: `${scrollOffset}px`  }}>CAPABILITIES <br></br>IN OUR SERVICES</h2>
+        <h2 ref={titleRef} className={`lg:absolute static text-[40px] top-[70px]`} style={{ top: `${scrollOffset}px`  }}>SERVICES</h2>
        
         </div>
         <div className="flex flex-col w-full">
@@ -105,7 +105,7 @@ return (
                 {capability.topics.map((topic, topicIndex) => (
                 <p
                     key={topicIndex}
-                    className="list-item list-disc ml-[30px]"
+                    className="ml-[30px]"
                 >
                     {topic}
                 </p>
@@ -117,37 +117,13 @@ return (
     </div>
     </section>
 
-    <section className="2xl:px-[130px] lg:px-[50px] px-[20px]">
-        <div className="bg-[#673147] 2xl:px-[150px] lg:px-[50px] py-[90px] rounded-[30px] relative">
-            <img
+    <section className="2xl:px-[130px] lg:px-[50px] px-[20px] mb-[130px] mt-[250px] relative">
+    <img
             src="/mugen_koi.png"
-            className="absolute hidden lg:block -right-[5%] -top-[30%]"
+            className="absolute hidden lg:block right-0 2xl:-top-[30%] -top-[60%]"
             ></img>
-            <h2 className="text-[40px] text-center mb-[100px]">OUR PROCESS</h2>
-            <div className="flex flex-col lg:space-x-[50px] lg:flex-row justify-between space-y-[50px] lg:space-y-0">
-            <div className="flex flex-col space-y-[10] lg:space-y-[25px] items-center text-center lg:w-1/3">
-                <h3 className="text-[54px]">01</h3>
-                <h3 className="text-[32px]">Strategy</h3>
-                <p>Lorem ipsum dolor sit amet</p>
-            </div>
-
-            <div className="flex flex-col space-y-[10] lg:space-y-[25px] items-center text-center lg:w-1/3">
-                <h3 className="text-[54px]">02</h3>
-                <h3 className="text-[32px]">System Creation</h3>
-                <p>Lorem ipsum dolor sit amet</p>
-            </div>
-
-            <div className="flex flex-col space-y-[10] lg:space-y-[25px] items-center text-center lg:w-1/3">
-                <h3 className="text-[54px]">03</h3>
-                <h3 className="text-[32px]">Implementation</h3>
-                <p>Lorem ipsum dolor sit amet</p>
-            </div>
-            </div>
-        </div>
-    </section>
-    <section className="2xl:px-[130px] lg:px-[50px] px-[20px] mb-[130px] mt-[250px]">
     <div className="flex flex-col lg:flex-row  px-[20px] py-[20px] lg:px-[50px] 2xl:px-[150px] lg:py-[90px] space-y-[100px] lg:space-y-[0] items-center justify-between rounded-[30px]">
-        <div className="flex flex-col space-y-[30px] lg:w-1/2 2xl:w-1/3 ">
+        <div className="flex flex-col space-y-[30px] lg:w-1/2 ">
         <h1>Optimize Your DAO</h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

@@ -124,8 +124,33 @@ label{
 }
 
 .chakra-button{
-
+  background-color: #EE6FA3;
   color:white!important;
+  padding-right: 50px!important ;
+  padding-left: 50px!important ;
+  padding-bottom: 20px!important ;
+  padding-top: 20px!important ;
+  border-radius: 2000px!important;
+}
+
+.css-ez23ye:disabled{
+  background-color: #EE6FA3!important;
+  opacity: 0.5;
+  padding-right: 50px!important ;
+  padding-left: 50px!important ;
+  padding-bottom: 20px!important ;
+  padding-top: 20px!important ;
+  border-radius: 2000px!important;
+}
+
+.css-ez23ye{
+  background-color: #EE6FA3!important;
+  opacity: 1;
+  padding-right: 50px!important ;
+  padding-left: 50px!important ;
+  padding-bottom: 20px!important ;
+  padding-top: 20px!important ;
+  border-radius: 2000px!important;
 }
 
 /* .topRightPetal{

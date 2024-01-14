@@ -126,7 +126,6 @@ return (
         </FormControl>
         <div className="flex">
         <Button
-            variant="outline"
             isLoading={isLoading}
             isDisabled={!values.name || !values.email || !values.service || !values.message}
             onClick={onSubmit}>
