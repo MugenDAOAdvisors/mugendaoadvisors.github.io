@@ -32,7 +32,7 @@ return (
     <div className="flex items-center space-x-[20px]">
         <img className="w-[30px] h-[30px]" src="/mugenLogo.png"></img>
         <p className="uppercase font-[DM Sans] text-[20px] text-white font-bold">
-        Mugen
+        Mugen DAO Advisors
         </p>
     </div>
     <div className="flex lg:space-x-[100px] md:space-x-[50px] space-x-[20px] items-center">
@@ -68,7 +68,7 @@ return (
             <div className="flex items-center space-x-[20px]">
             <img className="w-[30px] h-[30px]" src="/mugenLogo.png"></img>
             <p className="uppercase font-[DM Sans] text-[20px] text-white font-bold">
-                Mugen
+            Mugen DAO Advisors
             </p>
             </div>
             {navigation.map((nav) => (

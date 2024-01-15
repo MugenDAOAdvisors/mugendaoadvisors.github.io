@@ -9,15 +9,15 @@ export default function Services(){
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 mt-[30px] md:mt-[90px] 2xl:gap-[130px] lg:gap-[50px] gap-[30px] justify-items-center">
                 <div className="bg-[#673147] w-3/4 lg:w-full lg:h-[350px] py-[50px] px-[25px] flex flex-col rounded-[30px] text-center lg:gap-[50px] gap-[20px]">
-                    <p className="font-bold text-[28px]">Consulting</p>
+                    <p className="font-bold text-[28px]">Community Support</p>
                     <p className="text-[#8C8C8C] text-[18px]">You will get an experience team that can cover all your needs in a one-stop solution to take care of all your needs.</p>
                 </div>
                 <div className="bg-[#673147] w-3/4 lg:w-full lg:h-[350px] py-[50px] px-[25px] flex flex-col rounded-[30px] text-center lg:gap-[50px] gap-[20px]">
-                    <p className="font-bold text-[28px]">Consulting</p>
+                    <p className="font-bold text-[28px]">DAO Governance</p>
                     <p className="text-[#8C8C8C] text-[18px]">You will get an experience team that can cover all your needs in a one-stop solution to take care of all your needs.</p>
                 </div>
                 <div className="bg-[#673147] w-3/4 lg:w-full lg:h-[350px] py-[50px] px-[25px] flex flex-col rounded-[30px] text-center lg:gap-[50px] gap-[20px]">
-                    <p className="font-bold text-[28px]">Consulting</p>
+                    <p className="font-bold text-[28px]">Strategic Advisory</p>
                     <p className="text-[#8C8C8C] text-[18px]">You will get an experience team that can cover all your needs in a one-stop solution to take care of all your needs.</p>
                 </div>
             </div>
