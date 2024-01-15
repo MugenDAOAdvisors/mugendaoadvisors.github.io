@@ -21,8 +21,8 @@ export default function About(){
                         <img src="/mugen_maple.png"></img>
                     </div>
                     <div className="lg:w-1/2 flex flex-col">
-                        <h3>We believe bespoke is best when building your community infrastructure clients will fall in love with.</h3>
-                        <p className="mt-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                        <h3>We believe bespoke is best when building your community infrastructure.</h3>
+                        <p className="mt-[15px]">We do not believe in one-size-fits all configurations to accommodate your DAO's needs. We will work with your community to provide the DAO with the tools it needs to focus on its mission.</p>
                         <div className="flex mt-[50px]">
                             <p className="text-black px-[50px] py-[20px] text-center bg-[#EE6FA3] rounded-full font-medium">Explore Now</p>
                         </div>
@@ -33,7 +33,7 @@ export default function About(){
             <section className="2xl:pl-[130px] lg:pl-[50px] lg:pr-0 px-[20px] lg:mt-[500px] mt-[200px]">
                 <div className="flex lg:space-x-[250px]">
                     <div className="lg:w-1/2 flex flex-col">
-                        <h3>Dive deep into your needs and goals as a business to find out where we can improve your needs</h3>
+                        <h3>Comprehensive or a la carte service offerings available at rates that work for you.</h3>
                         <p className="mt-[15px]">Pricing is available upon request and depends on the functions required and activities by the DAO, Foundation or Operating Company. <br></br> <br></br>Competitive fees payable in fiat and/or native tokens.</p>
                         <div className="flex mt-[50px]">
                             <p className="text-black px-[50px] py-[20px] text-center bg-[#EE6FA3] rounded-full ">Explore Now</p>
@@ -48,7 +48,7 @@ export default function About(){
                 <div className="flex flex-col md:space-y-[180px] space-y-[70px]">
                     <div className="flex flex-col space-y-[30px]">
                         <h2 className="text-center">What we care about</h2>
-                        <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        <p className="text-center">Our team is composed of sophisticated, crypto-native operators who believe in building decentralized, transparent, permissionless, and censorship-resistant tools for the future. We put your community in control and provide your DAO with the support it needs so builders can focus on building without administrative headaches.</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-center justify-items-center gap-[50px]">
                         <div className="flex flex-col items-center md:justify-between justify-around h-[150px]">
