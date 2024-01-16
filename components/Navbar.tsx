@@ -42,9 +42,11 @@ return (
             <Link href={nav.href}>{nav.name}</Link>
             </p>
         ))}
-        <p className="uppercase font-medium bg-[#EE6FA3] px-[40px] py-[15px] text-[20px] rounded-full text-white">
-            Let's Talk
-        </p>
+        <Link href="/contact">
+    <p className="uppercase font-medium bg-[#EE6FA3] px-[40px] py-[15px] text-[20px] rounded-full text-[#1B1B1B]">
+        Let's Talk
+    </p>
+</Link>
         </div>
     </div>
     </div>
@@ -76,9 +78,11 @@ return (
                 <Link href={nav.href}>{nav.name}</Link>
             </p>
             ))}
-            <p className="uppercase font-medium bg-[#EE6FA3] px-[40px] py-[15px] text-[20px] rounded-full text-[#1B1B1B]">
-            Let's Talk
-            </p>
+            <Link href="/contact">
+    <p className="uppercase font-medium bg-[#EE6FA3] px-[40px] py-[15px] text-[20px] rounded-full text-[#1B1B1B]">
+        Let's Talk
+    </p>
+</Link>
         </div>
         </div>
     </div>

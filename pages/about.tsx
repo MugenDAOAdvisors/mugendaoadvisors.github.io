@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 export default function About(){
     return(
         <div>
-            <section className="2xl:px-[130px] lg:px-[50px] px-[20px]">
+            <section>
                 <Navbar></Navbar>
             </section>
 

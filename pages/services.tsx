@@ -34,6 +34,51 @@ const capabilities = [
 },
 ];
 
+
+const services2 = [
+    {
+        name: "Strategy, Growth and Scalability Advisory Services",
+        text: "Lorem 1"
+    },
+    {
+        name: "Operations Management",
+        text: "Lorem 2"
+    },
+    {
+        name: "Treasury Management",
+        text: "Lorem 3"
+    },
+    {
+        name: "Ecosystem Grants Program Management",
+        text: "Lorem 4"
+    },
+    {
+        name: "Governance and Voting Services",
+        text: "Lorem 5"
+    },
+    {
+        name: "Proposal Management Services",
+        text: "Lorem 6"
+    },
+    {
+        name: "Compliance and Risk Advisory Services",
+        text: "Lorem 7"
+    },
+    {
+        name: "Finance and Accounting Services",
+        text: "Lorem 8"
+    },
+    {
+        name: "Bank Account Opening Services",
+        text: "Lorem 9"
+    },
+    {
+        name: "Community Outreach and Social Media Account Administration",
+        text: "Lorem 10"
+    },
+
+]
+
 const titleRef = useRef<HTMLObjectElement>(null)
 const ref = useRef<HTMLElement>(null)
 const [scrollOffset, setScrollOffset] = useState(0);
@@ -71,7 +116,7 @@ useEffect(() => {
 
 return (
 <div>
-    <section className="2xl:px-[130px] lg:px-[50px] px-[20px]">
+    <section>
     <Navbar></Navbar>
     </section>
     <section className="2xl:mx-[130px] lg:mx-[50px] mx-[20px] pb-[300px] border-b-[1px]  border-[#D9D9D9] mt-[150px]">
@@ -94,7 +139,7 @@ return (
         <h2 ref={titleRef} className={`lg:absolute static text-[40px] top-[70px]`} style={{ top: `${scrollOffset}px`  }}>SERVICES</h2>
        
         </div>
-        <div className="flex flex-col w-full">
+       {/*  <div className="flex flex-col w-full">
         {capabilities.map((capability, index) => (
             <div
             key={index}
@@ -113,7 +158,17 @@ return (
             </div>
             </div>
         ))}
-        </div>
+        </div> */}
+
+<div className="grid grid-cols-1 lg:grid-cols-2  2xl:gap-[130px] lg:gap-[50px] gap-[30px] justify-items-center ">
+        {services2.map((service) => (
+            <div className="flex flex-col items-center justify-center w-full sm:w-2/3 lg:w-full h-[250px] bg-gradient-to-b from-[#673147] to-[#EE6FA3] to-[300%] py-[50px] px-[25px] rounded-[30px] text-center">
+                <h2 className="text-[24px]">{service.name}</h2>
+                <p>{service.text}</p>
+            </div>
+        ))}
+
+    </div>
     </div>
     </section>
 
