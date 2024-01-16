@@ -114,7 +114,7 @@ label{
   font-size: 20px!important;
 }
 
-.chakra-input,.chakra-textarea,.chakra-select{
+.chakra-input,.chakra-textarea,.chakra-select, .chakra-checkbox{
     font-family: "DM Sans", sans-serif;
     color: #8D8D8D!important;
 }
@@ -151,6 +151,11 @@ label{
   padding-bottom: 20px!important ;
   padding-top: 20px!important ;
   border-radius: 2000px!important;
+}
+
+.css-1cjy4zv.file{
+  border: none!important;
+  border: 0px!important;
 }
 
 /* .topRightPetal{

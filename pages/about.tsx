@@ -44,33 +44,12 @@ export default function About(){
                     </div>
                 </div>
             </section>
-            <section className="2xl:px-[130px] lg:px-[50px] px-[20px] lg:mt-[300px] mt-[200px]">
-                <div className="flex flex-col md:space-y-[180px] space-y-[70px]">
-                    <div className="flex flex-col space-y-[30px]">
-                        <h2 className="text-center">What we care about</h2>
-                        <p className="text-center">Our team is composed of sophisticated, crypto-native operators who believe in building decentralized, transparent, permissionless, and censorship-resistant tools for the future. We put your community in control and provide your DAO with the support it needs so builders can focus on building without administrative headaches.</p>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-center justify-items-center gap-[50px]">
-                        <div className="flex flex-col items-center md:justify-between justify-around h-[150px]">
-                            <img src="/Decentralization.png"></img>
-                            <p className="md:text-[26px]">Decentralizaion</p>
-                        </div>
-                        <div className="flex flex-col items-center md:justify-between justify-around h-[150px]">
-                            <img src="/Transparency.png"></img>
-                            <p className="md:text-[26px]">Transparency</p>
-                        </div>
-                        <div className="flex flex-col items-center md:justify-between justify-around h-[150px]">
-                            <img src="/Scalability.png"></img>
-                            <p className="md:text-[26px]">Scalability</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
             <section className="2xl:px-[130px] lg:px-[50px] px-[20px] mb-[130px] mt-[250px]">
                 <div className="flex flex-col lg:flex-row bg-[#673147] px-[20px] py-[20px] lg:px-[50px] 2xl:px-[150px] lg:py-[90px] space-y-[100px] lg:space-y-[0] items-center justify-between rounded-[30px]">
                     <div className="flex flex-col space-y-[30px] lg:w-1/2 2xl:w-1/3 ">
                         <h1>Optimize Your DAO</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        <p>Schedule an introductory call with our crypto-native team to learn more about how Mugen can support your community.</p>
                     </div>
                     <div>
                         <p className="text-black px-[80px] py-[20px] font-bold bg-white rounded-full ">Let's Chat</p>

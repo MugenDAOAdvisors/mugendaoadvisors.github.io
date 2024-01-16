@@ -3,83 +3,9 @@ import Navbar from "@/components/Navbar";
 import { useEffect, useRef, useState } from "react";
 
 export default function Services() {
-const capabilities = [
-{
-    title: "Community Support",
-    topics: [
-    "Operations Management",
-    "Governance and Voting Services",
-    "Treasury Management",
-    "Proposal Management Services",
-    "Ecosystem Grants Program Management",
-    "Community Outreach and Social Media Account Administration",
-    ],
-},
-{
-    title: "DAO governance",
-    topics: [
-    "Strategy, Growth and Scalability Advisory Services",
-    "Strategy, Growth and Scalability Advisory Services",
-    "Compliance and Risk Advisory Services",
-    ],
-},
-{
-    title: "Strategic Advisory",
-    topics: [
-    "Lorem ipsum dolor sit amet ",
-    "Lorem ipsum dolor sit amet ",
-    "Lorem ipsum dolor sit amet ",
-    "Lorem ipsum dolor sit amet ",
-    ],
-},
-];
 
 
-const services2 = [
-    {
-        name: "Strategy, Growth and Scalability Advisory Services",
-        text: "Lorem 1"
-    },
-    {
-        name: "Operations Management",
-        text: "Lorem 2"
-    },
-    {
-        name: "Treasury Management",
-        text: "Lorem 3"
-    },
-    {
-        name: "Ecosystem Grants Program Management",
-        text: "Lorem 4"
-    },
-    {
-        name: "Governance and Voting Services",
-        text: "Lorem 5"
-    },
-    {
-        name: "Proposal Management Services",
-        text: "Lorem 6"
-    },
-    {
-        name: "Compliance and Risk Advisory Services",
-        text: "Lorem 7"
-    },
-    {
-        name: "Finance and Accounting Services",
-        text: "Lorem 8"
-    },
-    {
-        name: "Bank Account Opening Services",
-        text: "Lorem 9"
-    },
-    {
-        name: "Community Outreach and Social Media Account Administration",
-        text: "Lorem 10"
-    },
-
-]
-
-const titleRef = useRef<HTMLObjectElement>(null)
+/* const titleRef = useRef<HTMLObjectElement>(null)
 const ref = useRef<HTMLElement>(null)
 const [scrollOffset, setScrollOffset] = useState(0);
 const [lastScrollTop, setLastScrollTop] = useState(0);
@@ -111,7 +37,7 @@ useEffect(() => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [ref, lastScrollTop, titleRef]);
-
+ */
 
 
 return (
@@ -119,7 +45,7 @@ return (
     <section>
     <Navbar></Navbar>
     </section>
-    <section className="2xl:mx-[130px] lg:mx-[50px] mx-[20px] pb-[300px] border-b-[1px]  border-[#D9D9D9] mt-[150px]">
+    <section className="2xl:mx-[130px] lg:mx-[50px] mx-[20px] mt-[150px]">
     <div className="flex flex-col space-y-[50px] items-center">
         <h1 className="text-center">
         Builders should{" "}
@@ -133,42 +59,98 @@ return (
         </p>
     </div>
     </section>
-    <section ref={ref} className="2xl:px-[130px] lg:px-[50px] px-[20px] pt-[70px] mb-[150px] relative">
-    <div className="flex flex-col lg:flex-row lg:space-x-[120px] ">
-        <div className="lg:w-1/3">
-        <h2 ref={titleRef} className={`lg:absolute static text-[40px] top-[70px]`} style={{ top: `${scrollOffset}px`  }}>SERVICES</h2>
-       
-        </div>
-       {/*  <div className="flex flex-col w-full">
-        {capabilities.map((capability, index) => (
-            <div
-            key={index}
-            className="mt-[70px] flex flex-col space-y-[70px] border-b-[1px] border-[#D9D9D9] w-full pb-[115px]"
-            >
-            <h2 className="text-[40px]">{capability.title}</h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-[50px] ">
-                {capability.topics.map((topic, topicIndex) => (
-                <p
-                    key={topicIndex}
-                    className="ml-[30px]"
-                >
-                    {topic}
-                </p>
-                ))}
-            </div>
-            </div>
-        ))}
-        </div> */}
-
-<div className="grid grid-cols-1 lg:grid-cols-2  2xl:gap-[130px] lg:gap-[50px] gap-[30px] justify-items-center ">
-        {services2.map((service) => (
-            <div className="flex flex-col items-center justify-center w-full sm:w-2/3 lg:w-full h-[250px] bg-gradient-to-b from-[#673147] to-[#EE6FA3] to-[300%] py-[50px] px-[25px] rounded-[30px] text-center">
-                <h2 className="text-[24px]">{service.name}</h2>
-                <p>{service.text}</p>
-            </div>
-        ))}
-
+    <section  className="2xl:px-[130px] lg:px-[50px] px-[20px] pt-[70px] mb-[150px] mt-[300px] relative">
+    <div>
+        <h2 className={`text-[40px] top-[70px] text-center mb-[100px]`} >SERVICES</h2>
     </div>
+    <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-[50px] gap-[30px] justify-items-center pl-[100px]">
+            <div className="flex flex-col items-center gap-[50px] bg-[#673147] py-[50px] px-[25px] rounded-[30px] text-center">
+                <p className="font-bold text-[28px] text-white">
+                Operations Management Consulting Services
+                </p>
+                <p className=" text-[18px]">
+                    Create and implement policies for DAO’s operations and approvals. Represent the
+                    DAO or related entities in negotiations with customers, vendors, third-party
+                    service providers, and other key contacts to secure for it the most effective
+                    contract terms for the DAO.
+                </p>
+            </div>
+            <div className="flex flex-col items-center gap-[50px] bg-[#673147] py-[50px] px-[25px] rounded-[30px] text-center">
+                <p className="font-bold text-[28px] text-white">
+                    Strategy, Growth & Scalability Advisory Services
+                </p>
+                <p className="text-[18px]">
+                    Consult with community and core team to: transform contributors’ ideas into
+                    long-term and sustainable operations; provide advice and guidance regarding the
+                    DAO’s (or related entities’) leadership on new developments within the industry,
+                    and policy development in accordance with growth objectives; design and
+                    implementing support for the DAO’s strategies, plans and procedures; risk
+                    reduction for commercial relationships, corporate, tax, regulation, and
+                    employment issues; and advise on regulatory environment and operational
+                    restrictions with legal counsel.
+                </p>
+            </div>
+            <div className="flex flex-col items-center gap-[50px] bg-[#673147] py-[50px] px-[25px] rounded-[30px] text-center">
+                <p className="font-bold text-[28px] text-white">
+                    Ecosystem & Grants Program Management
+                </p>
+                <p className="text-[18px]">
+                    Establish bespoke policies and procedures for disbursing funds to grant recipients;
+                    establish competitive bid system for DAO proposals; and manage grants program
+                    in accordance with the DAO’s policies and procedures.
+                </p>
+            </div>
+            <div className="flex flex-col items-center gap-[50px] bg-[#673147] py-[50px] px-[25px] rounded-[30px] text-center">
+                <p className="font-bold text-[28px] text-white">
+                    Treasury Management Services
+                </p>
+                <p className="text-[18px]">
+                    Design bespoke treasury monitoring dashboard for DAO communities, consult
+                    Foundation Company directors on management of treasury capital and
+                    diversification of assets, support multisig signers managed by third party custody
+                    providers, and more.
+                </p>
+            </div>
+            <div className="flex flex-col items-center gap-[50px] bg-[#673147] py-[50px] px-[25px] rounded-[30px] text-center">
+                <p className="font-bold text-[28px] text-white">
+                    Finance & Accounting Services
+                </p>
+                <p className="text-[18px]">
+                    Keep basic books and records for DAO’s affiliated entities, provide document
+                    retention and availability services, assist with opening and administering bank
+                    accounts for DAO’s affiliated entities, and more.
+                </p>
+            </div>
+            <div className="flex flex-col items-center gap-[50px] bg-[#673147] py-[50px] px-[25px] rounded-[30px] text-center">
+                <p className="font-bold text-[28px] text-white">
+                    Governance & Voting Services
+                </p>
+                <p className="text-[18px]">
+                    Manage, monitor, and record the results of the governance process, voting and
+                    results, ecosystem grants program management services, and more.
+                </p>
+            </div>
+            <div className="flex flex-col items-center gap-[50px] bg-[#673147] py-[50px] px-[25px] rounded-[30px] text-center">
+                <p className="font-bold text-[28px] text-white">
+                    Proposal Management Services
+                </p>
+                <p className="text-[18px]">
+                    Create and implement policies and procedures for DAO Proposals and approvals;
+                    maintain Discourse or other DAO governance forum; track Proposal progress and
+                    implementation in accordance with the DAO’s governance parameters.
+                </p>
+            </div>
+            <div className="flex flex-col items-center gap-[50px] bg-[#673147] py-[50px] px-[25px] rounded-[30px] text-center">
+                <p className="font-bold text-[28px] text-white">
+                    Community Outreach & Social Media Account Administration
+                </p>
+                <p className="text-[18px]">
+                    Manage communications between the DAO and its community members, act as
+                    primary point of contact for the DAO and its related entities, moderate DAO's
+                    discussion forums (e.g., Twitter, Discord, Discourse, etc.), attend to inbound
+                    media inquiries, and more.
+                </p>
+            </div>
     </div>
     </section>
 
@@ -181,12 +163,11 @@ return (
         <div className="flex flex-col space-y-[30px] lg:w-1/2 ">
         <h1>Optimize Your DAO</h1>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
+        Schedule an introductory call with our crypto-native team to learn more about how Mugen can support your community.
         </p>
         </div>
         <div>
-        <p className="text-black px-[80px] py-[20px] font-bold bg-[#EE6FA3] rounded-full ">
+        <p className="text-white px-[80px] py-[20px] font-bold bg-[#EE6FA3] rounded-full ">
             Let's Chat
         </p>
         </div>

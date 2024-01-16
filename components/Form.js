@@ -1,5 +1,5 @@
 "use client";
-import {FormControl, FormErrorMessage, FormLabel, Input, Select, Textarea, Button, Text, useToast} from "@chakra-ui/react";
+import {FormControl, FormErrorMessage, FormLabel, Input, Select, Textarea, Button, Text, useToast, Checkbox} from "@chakra-ui/react";
 import { useState } from "react";
 import { ChakraProvider } from '@chakra-ui/react'
 import {sendContactForm} from "../lib/api"
@@ -7,6 +7,10 @@ import {sendContactForm} from "../lib/api"
 const initValues = {
 name: "",
 email: "",
+role:"",
+website: "",
+links: "",
+forum:"",
 service: "",
 message: "",
 };
@@ -74,7 +78,6 @@ return (
             type="text"
             placeholder="Full Name"
             name="name"
-            errorBorderColor="red.300"
             value={values.name}
             onChange={handleChange}
             onBlur={onBlur}
@@ -95,8 +98,64 @@ return (
             <FormErrorMessage>Required</FormErrorMessage>
         </FormControl>
         </div>
+        <div className="flex flex-col lg:flex-row lg:gap-[20px] space-y-[20px] lg:space-y-0">
+        <FormControl className="lg:w-1/2" isRequired isInvalid={touched.role && !values.role}>
+            <FormLabel className="text-white">Role</FormLabel>
+            <Input
+            className="w-full bg-transparent"
+            type="text"
+            placeholder="Your Role"
+            name="role"
+            value={values.role}
+            onChange={handleChange}
+            onBlur={onBlur}
+            />
+            <FormErrorMessage>Required</FormErrorMessage>
+        </FormControl>
+        <FormControl className="lg:w-1/2">
+            <FormLabel className="text-white">Project Website</FormLabel>
+            <Input
+            className="w-full"
+            type="text"
+            placeholder="Your Project Website"
+            name="website"
+            value={values.website}
+            onChange={handleChange}
+            onBlur={onBlur}
+            />
+        </FormControl>
+        </div>
+
+        <div className="flex flex-col lg:flex-row lg:gap-[20px] space-y-[20px] lg:space-y-0">
+        <FormControl className="lg:w-1/2">
+            <FormLabel className="text-white">Social Media Links</FormLabel>
+            <Input
+            className="w-full bg-transparent"
+            type="text"
+            placeholder="Social Media Links"
+            name="links"
+            value={values.links}
+            onChange={handleChange}
+            onBlur={onBlur}
+            />
+            <FormErrorMessage>Required</FormErrorMessage>
+        </FormControl>
+        <FormControl className="lg:w-1/2">
+            <FormLabel className="text-white">Governance Forum Link</FormLabel>
+            <Input
+            className="w-full"
+            type="text"
+            placeholder="Governance Forum Link"
+            name="forum"
+            value={values.forum}
+            onChange={handleChange}
+            onBlur={onBlur}
+            />
+        </FormControl>
+        </div>
+
         <FormControl isRequired isInvalid={touched.service && !values.service}>
-        <FormLabel className="text-white">Services Enquiry</FormLabel>
+        <FormLabel className="text-white">Services Inquiry</FormLabel>
         <Select
             className="w-full"
             name="service"
@@ -104,11 +163,16 @@ return (
             onChange={handleChange}
             onBlur={onBlur}
         >
-            <option value="" disabled selected>Select one...</option>
-            <option>Option 1</option>
-            <option>Option 2</option>
+            <option>Operations Management Consulting Services</option>
+            <option>Operations Management Consulting Services</option>
         </Select>
         <FormErrorMessage>Required</FormErrorMessage>
+        </FormControl>
+        <FormControl>
+            <FormLabel className="text-white">Upload your Whitepaper</FormLabel>
+            <Input
+            className="file"
+            type="file"></Input>
         </FormControl>
 
         <FormControl isRequired isInvalid={touched.message && !values.message}>
@@ -127,7 +191,7 @@ return (
         <div className="flex">
         <Button
             isLoading={isLoading}
-            isDisabled={!values.name || !values.email || !values.service || !values.message}
+            isDisabled={!values.name || !values.email || !values.service || !values.message || !values.role} //Required
             onClick={onSubmit}>
             Submit
         </Button>
