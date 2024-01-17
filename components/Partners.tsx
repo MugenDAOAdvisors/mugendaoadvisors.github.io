@@ -9,6 +9,8 @@ export default function Partners (){
                 <img className="md:w-[150px] w-[70px] ml-[50px] mr-[50px]" src="/Glassmarket.svg"></img>
                 <img className="md:w-[150px] w-[70px] ml-[50px] mr-[50px]" src="/Hedgey.png"></img>
                 <img className="md:w-[150px] w-[70px] ml-[50px] mr-[50px]" src="/Groomlake.png"></img>
+                <img className="md:w-[150px] w-[70px] ml-[50px] mr-[50px]" src="/HorizonsGlobal.png"></img>
+                <img className="md:w-[150px] w-[70px] ml-[50px] mr-[50px]" src="/HorizonsLaw.png"></img>
             </Marquee>
 
         </div>

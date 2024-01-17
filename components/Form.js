@@ -11,9 +11,22 @@ role:"",
 website: "",
 links: "",
 forum:"",
-service: "",
+service: [],
+whitepaper:"",
 message: "",
 };
+
+const services =[
+    { name: "Operations Management Consulting Services"},
+    {name: "Strategy, Growth & Scalability Advisory Services"},
+    { name: "Ecosystem & Grants Program Management"},
+    {name: "Treasury Management Services"},
+    {name: "Finance & Accounting Services"},
+    {name: "Governance & Voting Services"},
+    {name: "Proposal Management Services"},
+    {name: "Community Outreach & Social Media Account Administration"},
+]
+
 
 const initState = { values: initValues };
 
@@ -21,32 +34,47 @@ export default function Contact() {
 const toast = useToast() ;
 const [state, setState] = useState(initState);
 const [touched, setTouched] =useState ({});
-
 const { values, isLoading, error } = state;
+const [formKey, setFormKey] = useState(0);
 
 const onBlur = ({target}) => setTouched((prev) => ({...prev,
 [target.name]:true
 }))
 
 
-const handleChange = ({ target }) =>
-    setState((prev) => ({
-    ...prev,
-    values: {
-        ...prev.values,
-        [target.name]: target.value,
-    },
-    }));
+const handleChange = ({ target }) => {
+    if (target.type === "checkbox") {
+        setState((prev) => ({
+            ...prev,
+            values: {
+                ...prev.values,
+                [target.name]: target.checked
+                    ? [...prev.values[target.name], target.value]
+                    : prev.values[target.name].filter((value) => value !== target.value),
+            },
+        }));
+    } else {
+        setState((prev) => ({
+            ...prev,
+            values: {
+                ...prev.values,
+                [target.name]: target.value,
+            },
+        }));
+    }
+};
 
     const onSubmit = async () => {
         setState((prev) => ({
             ...prev,
             isLoading:true
         }));
+
         try {
             await sendContactForm(values);
             setTouched({});
             setState(initState);
+            
             toast({
                 title:"Message Sent.",
                 status:"success",
@@ -60,11 +88,15 @@ const handleChange = ({ target }) =>
                 error:error.message,
             }))
         }
-       
+
+        setTimeout(() => {
+            setFormKey((prevKey) => prevKey + 1);
+        }, 2000)
+        
     };
 
 return (
-    <ChakraProvider>
+    <ChakraProvider key={formKey}>
     <div className="flex flex-col lg:space-y-[50px] space-y-[20px] ">
 
     {error && (
@@ -99,7 +131,7 @@ return (
         </FormControl>
         </div>
         <div className="flex flex-col lg:flex-row lg:gap-[20px] space-y-[20px] lg:space-y-0">
-        <FormControl className="lg:w-1/2" isRequired isInvalid={touched.role && !values.role}>
+        <FormControl className="lg:w-1/2">
             <FormLabel className="text-white">Role</FormLabel>
             <Input
             className="w-full bg-transparent"
@@ -112,7 +144,7 @@ return (
             />
             <FormErrorMessage>Required</FormErrorMessage>
         </FormControl>
-        <FormControl className="lg:w-1/2">
+        <FormControl className="lg:w-1/2 "  isRequired  isInvalid={touched.website && !values.website}>
             <FormLabel className="text-white">Project Website</FormLabel>
             <Input
             className="w-full"
@@ -154,25 +186,33 @@ return (
         </FormControl>
         </div>
 
-        <FormControl isRequired isInvalid={touched.service && !values.service}>
+        <FormControl>
         <FormLabel className="text-white">Services Inquiry</FormLabel>
-        <Select
-            className="w-full"
-            name="service"
-            value={values.service}
-            onChange={handleChange}
-            onBlur={onBlur}
-        >
-            <option>Operations Management Consulting Services</option>
-            <option>Operations Management Consulting Services</option>
-        </Select>
+        <div className="grid grid-cols-2">
+            {services.map((service) => (
+                <Checkbox
+                className="w-full"
+                name="service"
+                value={service.name}
+                onChange={handleChange}
+                onBlur={onBlur}>
+                {service.name}
+                </Checkbox>
+            ))}
+        </div>
         <FormErrorMessage>Required</FormErrorMessage>
         </FormControl>
         <FormControl>
-            <FormLabel className="text-white">Upload your Whitepaper</FormLabel>
+            <FormLabel className="text-white">Link your Whitepaper</FormLabel>
             <Input
-            className="file"
-            type="file"></Input>
+            className="w-full"
+            type="text"
+            placeholder="E.g., GitBook Link"
+            name="whitepaper"
+            value={values.whitepaper}
+            onChange={handleChange}
+            onBlur={onBlur}>
+            </Input>
         </FormControl>
 
         <FormControl isRequired isInvalid={touched.message && !values.message}>
@@ -191,7 +231,7 @@ return (
         <div className="flex">
         <Button
             isLoading={isLoading}
-            isDisabled={!values.name || !values.email || !values.service || !values.message || !values.role} //Required
+            isDisabled={!values.name || !values.email || !values.website || !values.message} //Required
             onClick={onSubmit}>
             Submit
         </Button>

@@ -6,7 +6,7 @@ export default function About(){
                 <h2>Our hands-on approach</h2>
             </div>
             <div className="flex flex-col xl:flex-row mt-[15px]">
-                <p className="xl:w-1/2">Mugen DAO Advisors provides a full suite of solutions for projects who want to achieve maximum decentralization, transparency and scalability. It provides a professional service performing all functions required to run DAOs and Foundation Companies in the Cayman Islands and the British Virgin Islands.</p>
+                <p className="xl:w-1/2">Mugen DAO Advisors provides a full suite of solutions for projects who want to achieve maximum decentralization, transparency and scalability. It provides a professional service performing all functions required to run DAOs and its related entities.</p>
             </div>
             <div className="flex flex-col md:flex-row justify-start 2xl:gap-[60px] md:gap-[60px] gap-[30px] mt-[50px]">
                 <div>
