@@ -30,8 +30,8 @@ return (
 <nav>
     <div className="lg:flex hidden justify-between py-[30px] px-[20px] 2xl:px-[130px] lg:px-[50px]">
     <div className="flex items-center space-x-[20px]">
-        <img className="w-[30px] h-[30px]" src="/mugenLogo.png"></img>
-        <p className="uppercase font-[DM Sans] text-[20px] text-white font-bold">
+        <img className="w-[40px] h-[40px]" src="/mugenLogo.png"></img>
+        <p className="uppercase font-[DM Sans] text-[26px] text-white font-bold">
         Mugen
         </p>
     </div>
@@ -68,8 +68,8 @@ return (
         >
         <div className="flex flex-col items-center justify-center space-y-[50px] px-[10px] mt-[50px] ">
             <div className="flex items-center space-x-[20px]">
-            <img className="w-[30px] h-[30px]" src="/mugenLogo.png"></img>
-            <p className="uppercase font-[DM Sans] text-[20px] text-white font-bold">
+            <img className="w-[40px] h-[40px]" src="/mugenLogo.png"></img>
+            <p className="uppercase font-[DM Sans] text-[26px] text-white font-bold">
             Mugen
             </p>
             </div>

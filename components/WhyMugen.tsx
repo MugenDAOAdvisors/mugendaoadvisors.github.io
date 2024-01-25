@@ -8,11 +8,11 @@ export default function WhyMugen(){
 
 
             <div className="rounded-[40px] mt-[100px]">
-    <p>Why Mugen</p>
+    <p>Why Mugen ?</p>
     <div className="flex flex-col lg:flex-row md:gap-[50px] gap-[20px]">
         <h2 className="lg:w-[70%] w-full">Consistently delivering unmatched services</h2>
        {/*  <p className= "lg:w-[30%] text-[#D8CBCB]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur</p> */}
-        <p className= "lg:w-[30%] text-[#D8CBCB]">Our experienced team can cover all of your DAO's needs with our one-stop solution for DAO managemet servies.</p>
+        <p className= "lg:w-[30%] text-[#D8CBCB]">Our experienced crypto-native team can cover all of your DAO's needs with our one-stop solution for DAO managemet servies.</p>
     </div>
 
     <section className="2xl:px-[130px] lg:px-[50px] px-[20px] lg:mt-[300px] mt-[200px]">

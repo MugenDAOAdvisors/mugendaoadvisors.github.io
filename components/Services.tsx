@@ -13,8 +13,8 @@ export default function Services(){
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 mt-[30px] md:mt-[90px] 2xl:gap-[130px] lg:gap-[50px] gap-[30px] justify-items-center">
                 <div className="bg-[#673147] w-3/4 lg:w-full  py-[50px] px-[25px] flex flex-col rounded-[30px] text-center lg:gap-[50px] gap-[20px]">
-                    <p className="font-bold text-[28px] text-white">Community Support</p>
-                    <p className=" text-[18px]">Manage communications between the DAO and its community members, moderate DAO's discussion forums (e.g., Twitter, Discord, Discourse, etc.), attend to inbound media inquiries.</p>
+                    <p className="font-bold text-[28px] text-white">Ecosystem & Grants Program Management</p>
+                    <p className=" text-[18px]">Establish bespoke policies and procedures for disbursing funds to grant recipients; establish competitive bid system for DAO proposals; and manage grants program in accordance with the DAO’s policies and procedures.</p>
                 </div>
                 <div className="bg-[#673147] w-3/4 lg:w-full  py-[50px] px-[25px] flex flex-col rounded-[30px] text-center lg:gap-[50px] gap-[20px]">
                     <p className="font-bold text-[28px] text-white">DAO Governance</p>

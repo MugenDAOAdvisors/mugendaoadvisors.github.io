@@ -14,7 +14,7 @@ export default function About(){
                     <p className="text-[#B0B0B0]">Collective Experience</p>
                 </div>
                 <div>
-                    <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-[#673147] from-[-30%] to-[#FFFFFF] to-[150%]">70+</h1>
+                    <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-[#673147] from-[-30%] to-[#FFFFFF] to-[150%]">50+</h1>
                     <p className="text-[#B0B0B0]">International Clients</p>
                 </div>
             </div>

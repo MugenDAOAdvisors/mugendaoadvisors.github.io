@@ -11,7 +11,7 @@ export default function About(){
             <section className="2xl:px-[130px] lg:px-[50px] px-[20px] mt-[200px]">
                 <div className="lg:w-1/2 flex flex-col gap-[15px]">
                     <h1 className="uppercase">Who <span className="underlinedGradientText">we</span> are</h1>
-                    <p>We are a bespoke Web3 consulting firm that provides a full suite of solutions for projects who want to achieve maximum decentralization, transparency and scalability. We provide a professional service by those coming from the top blockchain industry projects performing all functions required to run DAOs and Foundation Companies in the Cayman Islands and the British Virgin Islands.</p>
+                    <p>We are a bespoke Web3 consulting firm that provides a full suite of solutions for projects who want to achieve maximum decentralization, transparency and scalability. We provide a professional service by those coming from the top blockchain industry projects performing all functions required to run DAOs and Foundation Companies in any jurisdiction.</p>
                 </div>
             </section>
 
