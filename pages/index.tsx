@@ -6,10 +6,14 @@ import Partners from "@/components/Partners";
 import Optimize from "@/components/Optimize";
 import WhyMugen from "@/components/WhyMugen";
 import Footer from "@/components/Footer";
+import Head from "next/head"
 
 export default function Index() {
   return (
    <div>
+    <Head>
+      <title>Mugen DAO</title>
+    </Head>
        <Navbar></Navbar>
     <section className=" px-[20px] lg:pr-0 2xl:pl-[130px] lg:pl-[50px] mt-[130px]">
       <Home></Home>

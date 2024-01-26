@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Head from "next/head";
 import { useEffect, useRef, useState } from "react";
 
 export default function Services() {
@@ -39,9 +40,46 @@ useEffect(() => {
   }, [ref, lastScrollTop, titleRef]);
  */
 
+  const services = [
+    {
+        name: "Operations Management Consulting Services",
+        text:"Create and implement policies for DAO’s operations and approvals. Represent the DAO or related entities in negotiations with customers, vendors, third-party service providers, and other key contacts to secure for it the most effective contract terms for the DAO.",
+    },
+    {
+        name: "Strategy, Growth & Scalability Advisory Services",
+        text:" Consult with community and core team to: transform contributors’ ideas into long-term and sustainable operations; provide advice and guidance regarding the DAO’s (or related entities’) leadership on new developments within the industry, and policy development in accordance with growth objectives; design and implementing support for the DAO’s strategies, plans and procedures; risk reduction for commercial relationships, corporate, tax, regulation, and employment issues; and advise on regulatory environment and operational restrictions with legal counsel."    },
+    {
+        name: "Ecosystem & Grants Program Management",
+        text:"Establish bespoke policies and procedures for disbursing funds to grant recipients; establish competitive bid system for DAO proposals; and manage grants program in accordance with the DAO’s policies and procedures.",
+    },
+    {
+        name: "Treasury Management Services",
+        text:"Design bespoke treasury monitoring dashboard for DAO communities, consult Foundation Company directors on management of treasury capital and diversification of assets, support multisig signers managed by third party custody providers, and more.",
+    },
+    {
+        name: "Finance & Accounting Services",
+        text:" Keep basic books and records for DAO’s affiliated entities, provide document retention and availability services, assist with opening and administering bank accounts for DAO’s affiliated entities, and more.",
+    },
+    {
+        name: "Governance & Voting Services",
+        text:"Manage, monitor, and record the results of the governance process, voting and results, ecosystem grants program management services, and more.",
+    },
+    {
+        name: "Proposal Management Services",
+        text:"Create and implement policies and procedures for DAO Proposals and approvals; maintain Discourse or other DAO governance forum; track Proposal progress and implementation in accordance with the DAO’s governance parameters.",
+    },
+    {
+        name: "Community Outreach & Social Media Account Administration",
+        text:"Manage communications between the DAO and its community members, act as primary point of contact for the DAO and its related entities, moderate DAO's discussion forums (e.g., Twitter, Discord, Discourse, etc.), attend to inbound media inquiries, and more.",
+    },
+  ]
+
 
 return (
 <div>
+<Head>
+      <title>Mugen DAO</title>
+    </Head>
     <section>
     <Navbar></Navbar>
     </section>
@@ -63,83 +101,17 @@ return (
     <div>
         <h2 className={`text-[40px] top-[70px] text-center mb-[100px]`} >SERVICES</h2>
     </div>
-    <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-[50px] gap-[30px] justify-items-center pl-[100px]">
-            <div className="flex flex-col items-center gap-[50px] bg-[#673147] py-[50px] px-[25px] rounded-[30px] text-center">
-                <p className="font-bold text-[28px] text-white">
-                Operations Management Consulting Services
-                </p>
-                <p className=" text-[18px]">
-                    Create and implement policies for DAO’s operations and approvals. Represent the
-                    DAO or related entities in negotiations with customers, vendors, third-party
-                    service providers, and other key contacts to secure for it the most effective
-                    contract terms for the DAO.
-                </p>
-            </div>
-            <div className="flex flex-col items-center gap-[50px] bg-[#673147] py-[50px] px-[25px] rounded-[30px] text-center">
-                <p className="font-bold text-[28px] text-white">
-                    Strategy, Growth & Scalability Advisory Services
-                </p>
-                <p className="text-[18px]">
-                    Consult with community and core team to: transform contributors’ ideas into
-                    long-term and sustainable operations; provide advice and guidance regarding the
-                    DAO’s (or related entities’) leadership on new developments within the industry,
-                    and policy development in accordance with growth objectives; design and
-                    implementing support for the DAO’s strategies, plans and procedures; risk
-                    reduction for commercial relationships, corporate, tax, regulation, and
-                    employment issues; and advise on regulatory environment and operational
-                    restrictions with legal counsel.
-                </p>
-            </div>
-            <div className="flex flex-col items-center gap-[50px] bg-[#673147] py-[50px] px-[25px] rounded-[30px] text-center">
-                <p className="font-bold text-[28px] text-white">
-                    Ecosystem & Grants Program Management
-                </p>
-                <p className="text-[18px]">
-                    Establish bespoke policies and procedures for disbursing funds to grant recipients;
-                    establish competitive bid system for DAO proposals; and manage grants program
-                    in accordance with the DAO’s policies and procedures.
-                </p>
-            </div>
-            <div className="flex flex-col items-center gap-[50px] bg-[#673147] py-[50px] px-[25px] rounded-[30px] text-center">
-                <p className="font-bold text-[28px] text-white">
-                    Treasury Management Services
-                </p>
-                <p className="text-[18px]">
-                    Design bespoke treasury monitoring dashboard for DAO communities, consult
-                    Foundation Company directors on management of treasury capital and
-                    diversification of assets, support multisig signers managed by third party custody
-                    providers, and more.
-                </p>
-            </div>
-            <div className="flex flex-col items-center gap-[50px] bg-[#673147] py-[50px] px-[25px] rounded-[30px] text-center">
-                <p className="font-bold text-[28px] text-white">
-                    Finance & Accounting Services
-                </p>
-                <p className="text-[18px]">
-                    Keep basic books and records for DAO’s affiliated entities, provide document
-                    retention and availability services, assist with opening and administering bank
-                    accounts for DAO’s affiliated entities, and more.
-                </p>
-            </div>
-            <div className="flex flex-col items-center gap-[50px] bg-[#673147] py-[50px] px-[25px] rounded-[30px] text-center">
-                <p className="font-bold text-[28px] text-white">
-                    Governance & Voting Services
-                </p>
-                <p className="text-[18px]">
-                    Manage, monitor, and record the results of the governance process, voting and
-                    results, ecosystem grants program management services, and more.
-                </p>
-            </div>
-            <div className="flex flex-col items-center gap-[50px] bg-[#673147] py-[50px] px-[25px] rounded-[30px] text-center">
-                <p className="font-bold text-[28px] text-white">
-                    Proposal Management Services
-                </p>
-                <p className="text-[18px]">
-                    Create and implement policies and procedures for DAO Proposals and approvals;
-                    maintain Discourse or other DAO governance forum; track Proposal progress and
-                    implementation in accordance with the DAO’s governance parameters.
-                </p>
-            </div>
+    <div className="grid grid-cols-1 xl:grid-cols-3 lg:gap-[50px] gap-[30px] justify-items-center">
+        {services.map((service, index)=> (
+            <div key={index} className="flex flex-col items-center gap-[50px] bg-[#673147] py-[50px] px-[25px] rounded-[30px] text-center xl:h-[700px]">
+            <p className="font-bold text-[28px] text-white">
+                {service.name}
+            </p>
+            <p className="text-[18px]">
+                {service.text}
+            </p>
+        </div>
+        ))}
             <div className="flex flex-col items-center gap-[50px] bg-[#673147] py-[50px] px-[25px] rounded-[30px] text-center">
                 <p className="font-bold text-[28px] text-white">
                     Community Outreach & Social Media Account Administration

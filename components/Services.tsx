@@ -11,7 +11,7 @@ export default function Services(){
                 {/* <p className= "lg:w-[30%] text-[#D8CBCB]">Our experienced team can cover all of your DAO's needs with our one-stop solution for DAO managemet servies.</p> */}
                 
             </div>
-            <div className="grid grid-cols-1 xl:grid-cols-3 mt-[30px] md:mt-[90px] 2xl:gap-[130px] lg:gap-[50px] gap-[30px] justify-items-center">
+            <div className="grid grid-cols-1 xl:grid-cols-3 mt-[30px] md:mt-[90px]  lg:gap-[50px] gap-[30px] justify-items-center">
                 <div className="bg-[#673147]  w-full py-[50px] px-[25px] flex flex-col rounded-[30px] text-center xl:gap-0 gap-[20px]">
                     <p className="font-bold md:text-[28px] text-[20px] xl:h-[200px] text-white">Ecosystem & Grants Program Management</p>
                     <p className=" md:text-[18px] h-full flex items-start">Establish bespoke policies and procedures for disbursing funds to grant recipients; establish competitive bid system for DAO proposals; and manage grants program in accordance with the DAO’s policies and procedures.</p>

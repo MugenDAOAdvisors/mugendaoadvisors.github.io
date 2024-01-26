@@ -10,7 +10,7 @@ export default function Home(){
             </div>
         </div>
         <div className="hidden lg:block absolute right-0 w-1/3">
-            <img src="mugen_cherry.png"></img>
+            <img src="mugen_cherry.png" className="w-full"></img>
         </div>
     </div>
     )

@@ -1,17 +1,24 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Head from "next/head";
 
 export default function About(){
     return(
         <div>
+            <Head>
+                <title>Mugen DAO</title>
+            </Head>
             <section>
                 <Navbar></Navbar>
             </section>
 
-            <section className="2xl:px-[130px] lg:px-[50px] px-[20px] mt-[200px]">
+            <section className="2xl:px-[130px] lg:px-[50px] px-[20px] mt-[200px] flex relative">
                 <div className="lg:w-1/2 flex flex-col gap-[15px]">
                     <h1 className="uppercase">Who <span className="underlinedGradientText">we</span> are</h1>
                     <p>We are a bespoke Web3 consulting firm that provides a full suite of solutions for projects who want to achieve maximum decentralization, transparency and scalability. We provide a professional service by those coming from the top blockchain industry projects performing all functions required to run DAOs and Foundation Companies in any jurisdiction.</p>
+                </div>
+                <div className="hidden lg:block absolute right-0 w-1/3">
+                    <img src="mugen_cherry.png" className="w-full"></img>
                 </div>
             </section>
 

@@ -1,10 +1,14 @@
 import Footer from "@/components/Footer"
 import Form from "@/components/Form"
 import Navbar from "@/components/Navbar"
+import Head from "next/head"
 
 export default function Contact (){
     return (
         <div>
+            <Head>
+      <title>Mugen DAO</title>
+    </Head>
         <div className="">
             <Navbar></Navbar>
             <div className="flex flex-col lg:flex-row space-y-[50px] lg:space-y-0 lg:space-x-[50px]">

@@ -1,6 +1,11 @@
+import Link from "next/link";
+
+
 export default function Footer(){
     return(
+        
         <div className="bg-black py-[75px] 2xl:px-[130px] xl:px-[50px] px-[20px] flex flex-col gap-[50px]">
+            
             <div>
                 <p className="uppercase font-[DM Sans] text-[16px] sm:text-[18px] font-bold">Mugen DAO Advisors</p>
             </div>
@@ -20,13 +25,13 @@ export default function Footer(){
                 </div>
                 <div className="flex flex-col md:flex-row  md:space-x-[75px] xl:justify-end xl:pr-[80px]">
                     <div className="flex flex-col space-y-[40px]">
-                        <p className="uppercase font-[DM Sans] text-[16px] sm:text-[18px] md:text-[28px] font-bold underline-offset-1">Home</p>
-                        <p className="uppercase font-[DM Sans] text-[16px] sm:text-[18px] md:text-[28px] font-bold underline-offset-1">Who We Are</p>
+                        <Link href="/"><p className="uppercase font-[DM Sans] text-[16px] sm:text-[18px] md:text-[28px] font-bold underline-offset-1">Home</p></Link>
+                        <Link href="/about"><p className="uppercase font-[DM Sans] text-[16px] sm:text-[18px] md:text-[28px] font-bold underline-offset-1">Who We Are</p></Link>
                         
                     </div>
                     <div className="flex flex-col space-y-[40px]">
-                        <p className="uppercase font-[DM Sans] text-[16px] sm:text-[18px] md:text-[28px] font-bold underline-offset-1">Services</p>
-                        <p className="uppercase font-[DM Sans] text-[16px] sm:text-[18px] md:text-[28px] font-bold underline-offset-1">Contact Us</p>
+                    <Link href="/services"><p className="uppercase font-[DM Sans] text-[16px] sm:text-[18px] md:text-[28px] font-bold underline-offset-1">Services</p></Link>
+                    <Link href="/contact"><p className="uppercase font-[DM Sans] text-[16px] sm:text-[18px] md:text-[28px] font-bold underline-offset-1">Contact Us</p></Link>
                     </div>
                 </div>
             </div>
