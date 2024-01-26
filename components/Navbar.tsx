@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
 const navigation = [
@@ -25,6 +25,16 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
 const handleMenuToggle = () => {
 setIsMenuOpen(!isMenuOpen);
 };
+
+
+useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? "hidden" : "auto";
+
+    return () => {
+        document.body.style.overflow ="auto";
+    }
+}, [isMenuOpen])
+
 
 return (
 <nav>
@@ -52,13 +62,13 @@ return (
     </div>
 
     {/* MOBILE */}
-    <div className="block lg:hidden">
+    <div className="block lg:hidden bg-[#1B1B1B]">
     <button onClick={handleMenuToggle}>
         <img src="/Menu.svg" alt="menu" className="w-[50px] h-[50px] m-[10px]"></img>
     </button>
     <div
-        className={`${
-        isMenuOpen ? "w-screen h-screen" : "w-0 h-0"
+        className={` bg-[#1B1B1B] z-10 ${
+        isMenuOpen ? "w-screen h-screen fixed bg" : "w-0 h-0 static"
         } transition-all duration-250`}
     >
         <div

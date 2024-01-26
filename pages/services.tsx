@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 export default function Services() {
@@ -47,7 +48,7 @@ useEffect(() => {
     },
     {
         name: "Strategy, Growth & Scalability Advisory Services",
-        text:" Consult with community and core team to: transform contributors’ ideas into long-term and sustainable operations; provide advice and guidance regarding the DAO’s (or related entities’) leadership on new developments within the industry, and policy development in accordance with growth objectives; design and implementing support for the DAO’s strategies, plans and procedures; risk reduction for commercial relationships, corporate, tax, regulation, and employment issues; and advise on regulatory environment and operational restrictions with legal counsel."    },
+        text:"Consult with community and core team to provide advice and guidance regarding the DAO’s (or related entities’) leadership on current regulatory environment and operational restrictions with legal counsel; design and implement procedures for risk reduction in commercial relationships, corporate, tax, regulation, and employment issues."    },
     {
         name: "Ecosystem & Grants Program Management",
         text:"Establish bespoke policies and procedures for disbursing funds to grant recipients; establish competitive bid system for DAO proposals; and manage grants program in accordance with the DAO’s policies and procedures.",
@@ -103,33 +104,23 @@ return (
     </div>
     <div className="grid grid-cols-1 xl:grid-cols-3 lg:gap-[50px] gap-[30px] justify-items-center">
         {services.map((service, index)=> (
-            <div key={index} className="flex flex-col items-center gap-[50px] bg-[#673147] py-[50px] px-[25px] rounded-[30px] text-center xl:h-[700px]">
-            <p className="font-bold text-[28px] text-white">
+            <div key={index} className="flex flex-col items-center gap-[50px] bg-[#673147] py-[50px] px-[25px] rounded-[30px] ">
+            <p className="font-bold text-[26px] text-white text-center lg:h-[100px]">
                 {service.name}
             </p>
-            <p className="text-[18px]">
+            <p className="text-[18px] text-justify">
                 {service.text}
             </p>
         </div>
         ))}
-            <div className="flex flex-col items-center gap-[50px] bg-[#673147] py-[50px] px-[25px] rounded-[30px] text-center">
-                <p className="font-bold text-[28px] text-white">
-                    Community Outreach & Social Media Account Administration
-                </p>
-                <p className="text-[18px]">
-                    Manage communications between the DAO and its community members, act as
-                    primary point of contact for the DAO and its related entities, moderate DAO's
-                    discussion forums (e.g., Twitter, Discord, Discourse, etc.), attend to inbound
-                    media inquiries, and more.
-                </p>
-            </div>
+
     </div>
     </section>
 
     <section className="2xl:px-[130px] lg:px-[50px] px-[20px] mb-[130px] mt-[250px] relative">
     <img
             src="/mugen_koi.png"
-            className="absolute hidden lg:block right-0 2xl:-top-[30%] -top-[60%]"
+            className="absolute hidden lg:block right-0 2xl:-top-[30%] -top-[60%] pointer-events-none"
             ></img>
     <div className="flex flex-col lg:flex-row  px-[20px] py-[20px] lg:px-[50px] 2xl:px-[150px] lg:py-[90px] space-y-[100px] lg:space-y-[0] items-center justify-between rounded-[30px]">
         <div className="flex flex-col space-y-[30px] lg:w-1/2 ">
@@ -139,9 +130,9 @@ return (
         </p>
         </div>
         <div>
-        <p className="text-white px-[80px] py-[20px] font-bold bg-[#EE6FA3] rounded-full ">
+        <Link href="/contact"><p className="text-white px-[80px] py-[20px] font-bold bg-[#EE6FA3] rounded-full ">
             Let's Chat
-        </p>
+        </p></Link>
         </div>
     </div>
     </section>
