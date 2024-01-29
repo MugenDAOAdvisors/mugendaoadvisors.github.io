@@ -45,11 +45,13 @@ const handler = async (req, res) => {
         }
 
         try {
-            await transporter.sendMail({
+            let message = {
                 ...mailOptions,
                 ...generateEmailContent(data),
                 subject: data.name,
-            })
+            }
+            console.log(message)
+            await transporter.sendMail(message)
 
             return res.status(200).json({success:true});
 
