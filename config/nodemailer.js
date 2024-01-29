@@ -12,6 +12,6 @@ export const transporter = nodemailer.createTransport({
 });
 
 export const mailOptions ={
-    from:email,
-    to:email,
+    from:"website@mugen.ky",
+    to:"contact@mugen.ky",
 }
