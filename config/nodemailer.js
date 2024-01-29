@@ -1,12 +1,13 @@
 import nodemailer from "nodemailer";
 const email = process.env.EMAIL;
-const pass= process.env.EMAIL_PASS;
+const password = process.env.EMAIL_PASS;
 
 export const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: "smtp.mailgun.org",
+    post: 587,
     auth:{
         user: email,
-        pass,
+        pass: password,
     },
 });
 
