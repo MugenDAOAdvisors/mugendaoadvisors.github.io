@@ -18,8 +18,8 @@ export default function Footer(){
                     <div className="w-1/2 flex flex-col space-y-[15px] justify-end">
                         <p className="uppercase font-[DM Sans] text-[16px] sm:text-[18px] text-[#D4D4D4]">Connect With Us</p>
                         <div className="flex space-x-[30px]">
-                            <img src="/X.png"></img>
-                            <img src="/LinkedIn.png"></img>
+                            <a href="https://twitter.com/MugenAdvisors"><img src="/X.png"></img></a>
+                            <a href="https://www.linkedin.com/in/mugen-dao-advisors-3612b02b2/"><img src="/LinkedIn.png"></img></a>
                         </div>
                     </div>
                 </div>
