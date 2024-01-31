@@ -5,7 +5,7 @@ export default function Home(){
     <div className="w-full flex relative">
         <div className="flex flex-col lg:w-3/4 w-full">
             <h1 className="">DECENTRALIZED <br></br> TRANSPARENT <br></br> DAO MANAGEMENT SERVICES</h1>
-            <p className="lg:w-[65%] 2xl:w-[65%] mt-[15px]">The leading all-in-one solutions platform to launch, manage, and scale your DAO and its related entities in any jurisidction.</p>
+            <p className="lg:w-[65%] 2xl:w-[65%] mt-[15px]">The leading all-in-one solutions platform to launch, manage, and scale your DAO and its related entities in any jurisdiction.</p>
             <div className="flex mt-[50px]">
                 <Link href="/services"><p className="text-black text-[16px] lg:text-[22px] font-medium lg:py-[20px] lg:px-[40px] py-[10px] px-[20px] bg-[#EE6FA3] rounded-full">Explore Now</p></Link>
             </div>
