@@ -27,9 +27,9 @@ export default function Index() {
    <section className="2xl:px-[130px] lg:px-[50px] px-[20px] mt-[150px]">
       <WhyMugen></WhyMugen>
     </section>
-  <section className="mt-[200px]">
+{/*   <section className="mt-[200px]">
       <Partners></Partners>
-    </section> 
+    </section>  */}
     <section className="2xl:px-[130px] lg:px-[50px] px-[20px] mt-[200px]">
       <Optimize></Optimize>
     </section>
