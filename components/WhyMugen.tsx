@@ -24,7 +24,7 @@ export default function WhyMugen(){
                     <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-center justify-items-center gap-[50px]">
                         <div className="flex flex-col items-center md:justify-between justify-around h-[150px]">
                             <img src="/Decentralization.png"></img>
-                            <p className="md:text-[26px]">Decentralizaion</p>
+                            <p className="md:text-[26px]">Decentralization</p>
                         </div>
                         <div className="flex flex-col items-center md:justify-between justify-around h-[150px]">
                             <img src="/Transparency.png"></img>
